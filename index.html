@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yego - Partner de Yango</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>YEGO</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios">Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#servicios">Conductores Yango</a></li>
+                            <li><a href="#yego-premium">Yego Premium</a></li>
+                            <li><a href="#planes-financiamiento">Planes de Financiamiento</a></li>
+                            <li><a href="#beneficios">Beneficios</a></li>
+                            <li><a href="#planes">Planes</a></li>
+                            <li><a href="#cobertura">Cobertura de Seguros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <div class="customization-panel">
+                        <div class="color-picker">
+                            <button class="color-btn active" data-color="red" style="background: #dc2626;"></button>
+                            <button class="color-btn" data-color="blue" style="background: #2563eb;"></button>
+                            <button class="color-btn" data-color="green" style="background: #059669;"></button>
+                            <button class="color-btn" data-color="purple" style="background: #7c3aed;"></button>
+                            <button class="color-btn" data-color="orange" style="background: #ea580c;"></button>
+                        </div>
+                        <div class="icon-picker">
+                            <button class="icon-btn active" data-icon="fa-car" title="Auto"><i class="fas fa-car"></i></button>
+                            <button class="icon-btn" data-icon="fa-rocket" title="Cohete"><i class="fas fa-rocket"></i></button>
+                            <button class="icon-btn" data-icon="fa-star" title="Estrella"><i class="fas fa-star"></i></button>
+                            <button class="icon-btn" data-icon="fa-lightbulb" title="Bombilla"><i class="fas fa-lightbulb"></i></button>
+                            <button class="icon-btn" data-icon="fa-heart" title="Corazón"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn-secondary">Quiero Brandear</button>
+                    <button class="btn-primary">Registrarse</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    SOMOS YEGO, PARTNER<br>
+                    DE <span class="highlight">YANGO</span>.<br>
+                    <a href="#" class="text-danger">REGISTRATE</a>
+                </h1>
+                <p class="hero-subtitle">
+                    ACTUALIZA O CONSULTA
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large">REGISTRARSE</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-logo">
+                    <img src="logo-yego-wsp.png" alt="Logo Yego" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Destacados Section -->
+    <section class="servicios-destacados" id="servicios-destacados">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios Destacados</h2>
+                <p>Descubre las mejores opciones para conductores profesionales</p>
+            </div>
+            <div class="servicios-destacados-grid">
+                <!-- YEGO MI AUTO -->
+                <div class="servicio-destacado yego-mi-auto">
+                    <div class="servicio-destacado-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="servicio-destacado-content">
+                        <h3>YEGO MI AUTO</h3>
+                        <p>Tu auto propio con descuentos según tu rendimiento</p>
+                        <div class="servicio-destacado-highlights">
+                            <span class="highlight">TEA desde 2.65%</span>
+                            <span class="highlight">Desde 0% inicial</span>
+                        </div>
+                        <a href="#planes-financiamiento" class="btn-destacado">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- YEGO PRO -->
+                <div class="servicio-destacado yego-pro">
+                    <div class="servicio-destacado-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="servicio-destacado-content">
+                        <h3>YEGO PRO</h3>
+                        <p>Plan de compartir ganancias - Nosotros ponemos el auto</p>
+                        <div class="servicio-destacado-highlights">
+                            <span class="highlight">Ingresos garantizados</span>
+                            <span class="highlight">S/800.00 semanales</span>
+                        </div>
+                        <a href="#planes-financiamiento" class="btn-destacado">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- YEGO PREMIUM -->
+                <div class="servicio-destacado yego-premium">
+                    <div class="servicio-destacado-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="servicio-destacado-content">
+                        <h3>YEGO PREMIUM</h3>
+                        <p>Programa gratuito con beneficios exclusivos</p>
+                        <div class="servicio-destacado-highlights">
+                            <span class="highlight">COMPLETAMENTE GRATIS</span>
+                            <span class="highlight">Beneficios exclusivos</span>
+                        </div>
+                        <a href="#yego-premium" class="btn-destacado">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- PROMOCIONES -->
+                <div class="servicio-destacado promociones">
+                    <div class="servicio-destacado-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="servicio-destacado-content">
+                        <h3>PROMOCIONES</h3>
+                        <p>Ofertas especiales y descuentos exclusivos</p>
+                        <div class="servicio-destacado-highlights">
+                            <span class="highlight">Ofertas limitadas</span>
+                            <span class="highlight">Descuentos especiales</span>
+                        </div>
+                        <a href="#promociones" class="btn-destacado">Ver Promociones</a>
+                    </div>
+                </div>
+
+                <!-- NOVEDADES -->
+                <div class="servicio-destacado novedades">
+                    <div class="servicio-destacado-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="servicio-destacado-content">
+                        <h3>NOVEDADES</h3>
+                        <p>Últimas noticias y actualizaciones</p>
+                        <div class="servicio-destacado-highlights">
+                            <span class="highlight">Noticias frescas</span>
+                            <span class="highlight">Actualizaciones</span>
+                        </div>
+                        <a href="#novedades" class="btn-destacado">Ver Novedades</a>
+                    </div>
+                </div>
+
+                <!-- CONDUCTORES YANGO -->
+                <div class="servicio-destacado conductores-yango">
+                    <div class="servicio-destacado-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="servicio-destacado-content">
+                        <h3>CONDUCTORES YANGO</h3>
+                        <p>Únete a la comunidad más grande de Latinoamérica</p>
+                        <div class="servicio-destacado-highlights">
+                            <span class="highlight">Comunidad grande</span>
+                            <span class="highlight">Soporte 24/7</span>
+                        </div>
+                        <a href="#servicios" class="btn-destacado">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>La comunidad de conductores Yango más grande de Latinoamérica</p>
+            </div>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Conductores Yango</h3>
+                    <p>Únete a la comunidad más grande de conductores Yango en Latinoamérica con soporte 24/7.</p>
+                    <button class="btn-outline">Registrarse</button>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Beneficios Exclusivos</h3>
+                    <p>Disfruta de recompensas, descuentos y beneficios exclusivos para conductores Yego.</p>
+                    <button class="btn-outline">Ver Beneficios</button>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Asistencia técnica y soporte completo las 24 horas del día, los 7 días de la semana.</p>
+                    <button class="btn-outline">Contactar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yego Premium Section -->
+    <section class="yego-premium" id="yego-premium">
+        <div class="container">
+            <div class="section-header">
+                <h2>Yego Premium Perú</h2>
+                <p>Un programa exclusivo que te apoya mientras trabajas y te da más tranquilidad en cada viaje</p>
+                <div class="premium-highlight">
+                    <span class="highlight-badge">💯 COMPLETAMENTE GRATIS</span>
+                    <p>Tu esfuerzo merece respaldo. Con Yego Premium, conduces con más seguridad, sin pagar de nada.</p>
+                </div>
+            </div>
+            
+            <!-- Acerca del programa -->
+            <div class="program-info">
+                <h3>Acerca del programa</h3>
+                <p>El programa apoyará a los conductores que tienen una cantidad de viajes de acuerdo a la tabla adjunta. Con el fin de mantener la estabilidad del programa 🚗💼 En Yego Premium apoyamos a nuestros conductores activos con soluciones económicas y logísticas frente a situaciones que puedan surgir durante sus viajes en la plataforma Yango.</p>
+                <p>Todo esto está pensado para acompañarte cuando más lo necesites, bajo condiciones claras y requisitos definidos. 💪📋</p>
+            </div>
+
+            <!-- Tabla de Calificación -->
+            <div class="calificacion-section" id="planes">
+                <h3>Tabla de Calificación de Viajes</h3>
+                <div class="calificacion-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mes de calificación</th>
+                                <th>Viajes (Nivel Plata)</th>
+                                <th>Viajes (Nivel Oro)</th>
+                                <th>Mes de cobertura</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mes 1</td>
+                                <td>50</td>
+                                <td>400</td>
+                                <td>Mes 2</td>
+                            </tr>
+                            <tr>
+                                <td>Mes 2</td>
+                                <td>100</td>
+                                <td>400</td>
+                                <td>Mes 3</td>
+                            </tr>
+                            <tr>
+                                <td>Mes 3</td>
+                                <td>200</td>
+                                <td>400</td>
+                                <td>Mes 4</td>
+                            </tr>
+                            <tr>
+                                <td>Mes 4*</td>
+                                <td>200</td>
+                                <td>400</td>
+                                <td>Mes 5</td>
+                            </tr>
+                            <tr>
+                                <td>Mes 5 en adelante</td>
+                                <td>200</td>
+                                <td>400</td>
+                                <td>Mes 6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Niveles del programa -->
+            <div class="niveles-section" id="beneficios">
+                <h3>Niveles del programa</h3>
+                <p>En Yego Premium, reconocemos tu esfuerzo como conductor. Por eso hemos creado <strong>dos niveles de beneficios</strong> exclusivos pensados para ti: <strong>Nivel Plata</strong> y <strong>Nivel Oro</strong>. Ambos te ofrecen ventajas únicas según la cantidad de viajes que realices al mes.</p>
+                
+                <!-- Nivel Oro -->
+                <div class="nivel-card oro">
+                    <div class="nivel-header">
+                        <h4>🥇 Nivel Oro – Beneficios por más de 400 viajes mensuales</h4>
+                        <p>Si superas los <strong>400 viajes mensuales</strong>, activas el <strong>Nivel Oro</strong> <strong>automáticamente</strong> de Yego Premium. Este es nuestro nivel más alto, reservado para los conductores más activos.</p>
+                    </div>
+                    <div class="beneficios-grid">
+                        <div class="beneficio-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Escudo de Bonos para situaciones especiales</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Préstamos Urgentes para emergencias</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-car-crash"></i>
+                            <span>Apoyo ante choques durante tus rutas</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Reposición de celular por robo</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-calendar-star"></i>
+                            <span>Participación en Eventos Especiales</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Servicio de Grúa en Copago</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Acceso a Sorteos Exclusivos</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-car-wash"></i>
+                            <span>Lavado de salón del vehículo</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>Apoyo en caso de Hospitalización</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Celebración de tu cumpleaños con sorpresas</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Apoyo en multa ATU</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nivel Plata -->
+                <div class="nivel-card plata">
+                    <div class="nivel-header">
+                        <h4>🥈 Nivel Plata – Beneficios por hasta 200 viajes mensuales</h4>
+                        <p>Si realizas <strong>hasta 200 viajes mensuales</strong>, accedes automáticamente al <strong>Nivel Plata</strong> de Yego Premium. Con este nivel, disfrutarás de beneficios pensados para premiar tu constancia y conexión con la comunidad Yego.</p>
+                    </div>
+                    <div class="beneficios-grid">
+                        <div class="beneficio-item">
+                            <i class="fas fa-calendar-star"></i>
+                            <span>Participación en Eventos Especiales</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Servicio de Grúa en Copago</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Acceso a Sorteos Exclusivos</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-car-wash"></i>
+                            <span>Lavado de salón del vehículo</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>Apoyo en caso de Hospitalización</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Celebración de tu cumpleaños con sorpresas</span>
+                        </div>
+                        <div class="beneficio-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Apoyo en multa ATU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla de Beneficios Detallada -->
+            <div class="beneficios-detalle" id="cobertura">
+                <h3>Beneficios Detallados por Categoría</h3>
+                <div class="beneficios-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Beneficio</th>
+                                <th>Categoría</th>
+                                <th>Nivel</th>
+                                <th>Ciudades</th>
+                                <th>Coberturas/año</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Beneficio en combustible</td>
+                                <td>Beneficios exclusivos</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Lima</td>
+                                <td>-</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Apoyo ante choques en ruta</td>
+                                <td>Asistencia en ruta</td>
+                                <td><span class="badge oro">Oro</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Apoyo económico en caso de hospitalización</td>
+                                <td>Asistencia en ruta</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Apoyo en caso de Multas ATU</td>
+                                <td>Asistencia en ruta</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Lima</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Celebración de cumpleaños</td>
+                                <td>Beneficios exclusivos</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Lima</td>
+                                <td>1</td>
+                                <td><span class="no-link">Automático</span></td>
+                            </tr>
+                            <tr>
+                                <td>Escudo de bonos</td>
+                                <td>Apoyo Personal</td>
+                                <td><span class="badge oro">Oro</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Grúa con copago en caso de emergencia</td>
+                                <td>Apoyo Personal</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Participación en eventos especiales</td>
+                                <td>Apoyo Personal</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><span class="no-link">Automático</span></td>
+                            </tr>
+                            <tr>
+                                <td>Participación en sorteos exclusivos</td>
+                                <td>Apoyo vehicular</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><span class="no-link">Automático</span></td>
+                            </tr>
+                            <tr>
+                                <td>Préstamos urgentes</td>
+                                <td>Apoyo Personal</td>
+                                <td><span class="badge oro">Oro</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>-</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Reposición de celular en caso de robo</td>
+                                <td>Apoyo vehicular</td>
+                                <td><span class="badge oro">Oro</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                            <tr>
+                                <td>Servicio de lavado de salón para tu vehículo</td>
+                                <td>Beneficios exclusivos</td>
+                                <td><span class="badge plata">Plata</span></td>
+                                <td>Arequipa, Lima, Trujillo</td>
+                                <td>3</td>
+                                <td><a href="http://yegopremiumperu.bitrix24.site" target="_blank" class="btn-link">Aplicar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Canales de Contacto -->
+            <div class="contacto-section">
+                <h3>Canales de Contacto y Aplicación</h3>
+                <div class="contacto-grid">
+                    <div class="contacto-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>App Yango Pro</h4>
+                        <p>Opción de Asistencia en la App Yango Pro</p>
+                    </div>
+                    <div class="contacto-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://api.whatsapp.com/send?phone=51905459444&text=Hola%20soy%20de%20Per%C3%BA%20y%20necesito%20apoyo" target="_blank">Canal de consultas</a></p>
+                    </div>
+                    <div class="contacto-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Formulario</h4>
+                        <p><a href="http://yegopremiumperu.bitrix24.site/" target="_blank">Canal para aplicar a cobertura</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes de Financiamiento Section -->
+    <section class="planes-financiamiento" id="planes-financiamiento">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planes de Financiamiento</h2>
+                <p>Opciones flexibles para obtener tu vehículo y generar ingresos</p>
+            </div>
+
+            <!-- YEGO MI AUTO -->
+            <div class="plan-card yego-mi-auto">
+                <div class="plan-header">
+                    <div class="plan-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="plan-title">
+                        <h3>YEGO MI AUTO</h3>
+                        <p>Tu auto propio con descuentos según tu rendimiento</p>
+                    </div>
+                </div>
+
+                <div class="plan-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-percentage"></i>
+                        <span>TEA desde 2.65%</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Desde 0% inicial</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <span>3-6 años de crédito</span>
+                    </div>
+                </div>
+
+                <div class="plan-features">
+                    <h4>¿Qué hace único al programa?</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Descuentos según cantidad de viajes semanales</li>
+                        <li><i class="fas fa-check"></i> Sin necesidad de créditos complicados</li>
+                        <li><i class="fas fa-check"></i> Incluso sin inicial</li>
+                        <li><i class="fas fa-check"></i> Cuotas accesibles y flexibles</li>
+                        <li><i class="fas fa-check"></i> Vehículos listos para trabajar (GNV, GPS, ATU)</li>
+                        <li><i class="fas fa-check"></i> Opción de entrega por Sorteo, Remate o Inmediata</li>
+                    </ul>
+                </div>
+
+                <div class="modalidades">
+                    <h4>Modalidades de Entrega</h4>
+                    <div class="modalidad-tabs">
+                        <div class="tab active" data-tab="sorteo">
+                            <i class="fas fa-gift"></i>
+                            <span>Sorteo</span>
+                        </div>
+                        <div class="tab" data-tab="remate">
+                            <i class="fas fa-gavel"></i>
+                            <span>Remate</span>
+                        </div>
+                        <div class="tab" data-tab="inmediata">
+                            <i class="fas fa-bolt"></i>
+                            <span>Entrega Inmediata</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-content active" id="sorteo">
+                        <div class="modalidad-info">
+                            <h5>Sorteo</h5>
+                            <p>Al llegar a 400 aportantes se inician los sorteos semanales, empezando por 1 auto semanal y luego escalando a 2 o 3 autos semanales con el objetivo de entregar en un máximo de 3 años los autos a todos los aportantes.</p>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <span class="label">Cuota Semanal:</span>
+                                    <span class="value">$130</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Nro Cuotas:</span>
+                                    <span class="value">160</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Auto Sugerido:</span>
+                                    <span class="value">MG5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="remate">
+                        <div class="modalidad-info">
+                            <h5>Remate</h5>
+                            <p>Luego de un año de empezar los sorteos comenzamos la modalidad de remate, donde quien tiene el mayor número de cuotas en dinero disponible (mínimo 30 cuotas) se lleva el auto.</p>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <span class="label">Cuota Semanal:</span>
+                                    <span class="value">$130</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Nro Cuotas:</span>
+                                    <span class="value">160</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Requisito:</span>
+                                    <span class="value">1 año de aportes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="inmediata">
+                        <div class="modalidad-info">
+                            <h5>Entrega Inmediata</h5>
+                            <p>Si tienes $1000 (auto nuevo) o $600 (auto de segundo uso) en aportes puedes optar por entrega inmediata bajo un plan de pagos de financiamiento tradicional.</p>
+                            <div class="plan-details">
+                                <div class="detail-item">
+                                    <span class="label">Requisito:</span>
+                                    <span class="value">3 meses en Yango + 400 viajes/mes</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Inicial Nuevo:</span>
+                                    <span class="value">$1000</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Inicial Usado:</span>
+                                    <span class="value">$600</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="descuentos-table">
+                    <h4>Descuentos por Viajes Semanales</h4>
+                    <div class="table-responsive">
+                        <table class="descuentos-table">
+                            <thead>
+                                <tr>
+                                    <th>Viajes</th>
+                                    <th>Bono Auto</th>
+                                    <th>Pagarías de Cuota</th>
+                                    <th>Ahorro Total</th>
+                                    <th>Pago Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>160 viajes</td>
+                                    <td>$40</td>
+                                    <td>$90</td>
+                                    <td>$6,400</td>
+                                    <td>$14,400</td>
+                                </tr>
+                                <tr>
+                                    <td>140 viajes</td>
+                                    <td>$35</td>
+                                    <td>$95</td>
+                                    <td>$5,600</td>
+                                    <td>$15,200</td>
+                                </tr>
+                                <tr>
+                                    <td>120 viajes</td>
+                                    <td>$30</td>
+                                    <td>$100</td>
+                                    <td>$4,800</td>
+                                    <td>$16,000</td>
+                                </tr>
+                                <tr>
+                                    <td>100 viajes</td>
+                                    <td>$25</td>
+                                    <td>$105</td>
+                                    <td>$4,000</td>
+                                    <td>$16,800</td>
+                                </tr>
+                                <tr>
+                                    <td>80 viajes</td>
+                                    <td>$20</td>
+                                    <td>$110</td>
+                                    <td>$3,200</td>
+                                    <td>$17,600</td>
+                                </tr>
+                                <tr>
+                                    <td>60 viajes</td>
+                                    <td>$15</td>
+                                    <td>$115</td>
+                                    <td>$2,400</td>
+                                    <td>$18,400</td>
+                                </tr>
+                                <tr>
+                                    <td>45 viajes</td>
+                                    <td>$10</td>
+                                    <td>$120</td>
+                                    <td>$1,600</td>
+                                    <td>$19,200</td>
+                                </tr>
+                                <tr>
+                                    <td>30 viajes</td>
+                                    <td>$5</td>
+                                    <td>$125</td>
+                                    <td>$800</td>
+                                    <td>$20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>29 viajes</td>
+                                    <td>$0</td>
+                                    <td>$130</td>
+                                    <td>$0</td>
+                                    <td>$20,800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="plan-requirements">
+                    <h4>Requisitos de Inscripción</h4>
+                    <div class="requirements-grid">
+                        <div class="requirement-item">
+                            <i class="fas fa-id-card"></i>
+                            <span>Licencia A1 para inscribirse</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-car"></i>
+                            <span>A2A o superior para entrega</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Inscripción: $100-300</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Fecha máxima: 31/03/2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-cta">
+                    <a href="https://api.whatsapp.com/send?phone=51905459444&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20MI%20AUTO" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <!-- YEGO PRO -->
+            <div class="plan-card yego-pro">
+                <div class="plan-header">
+                    <div class="plan-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="plan-title">
+                        <h3>YEGO PRO</h3>
+                        <p>Plan de compartir ganancias - Nosotros ponemos el auto</p>
+                    </div>
+                </div>
+
+                <div class="plan-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-car"></i>
+                        <span>Nosotros ponemos el auto</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Combustible incluido</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Mantenimiento incluido</span>
+                    </div>
+                </div>
+
+                <div class="plan-features">
+                    <h4>¿Qué incluye YEGO PRO?</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>El Auto:</strong> Vehículo listo para trabajar</li>
+                        <li><i class="fas fa-check"></i> <strong>El Combustible:</strong> Nos encargamos del combustible</li>
+                        <li><i class="fas fa-check"></i> <strong>El Mantenimiento:</strong> Gastos operativos cubiertos</li>
+                        <li><i class="fas fa-check"></i> <strong>Personal:</strong> Soporte y asistencia 24/7</li>
+                        <li><i class="fas fa-check"></i> <strong>Pagos Puntuales:</strong> Monitoreo constante</li>
+                        <li><i class="fas fa-check"></i> <strong>Ingresos Garantizados:</strong> S/800.00 soles promedio líquido semanal</li>
+                    </ul>
+                </div>
+
+                <div class="yego-pro-details">
+                    <h4>¿Cómo funciona?</h4>
+                    <div class="proceso-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Conduce con YEGO PRO</h5>
+                                <p>Genera ingresos semanales garantizados mientras manejas nuestro vehículo</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Paga tus cuotas PRE</h5>
+                                <p>Con tus ingresos, paga las cuotas para entrar a los sorteos de YMA</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Obtén tu propio auto</h5>
+                                <p>Participa en sorteos y eventualmente obtén tu vehículo propio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="yego-pro-requirements">
+                    <h4>Requisitos</h4>
+                    <div class="requirements-list">
+                        <div class="requirement-item">
+                            <i class="fas fa-id-card"></i>
+                            <span>Licencia A2A o superior</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Ingresos semanales: S/800.00 soles promedio</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Disponibilidad completa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-cta">
+                    <a href="https://api.whatsapp.com/send?phone=51905459444&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20PRO" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Solicitar Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <h2>Somos Yego</h2>
+                    <p>
+                        La comunidad de conductores Yango más grande de Latinoamérica! 
+                        Con soporte 24/7 y beneficios exclusivos. #YegoSiempreCumple ❤️
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Comunidad más grande de Latinoamérica</li>
+                        <li><i class="fas fa-check"></i> Soporte 24/7</li>
+                        <li><i class="fas fa-check"></i> Beneficios exclusivos</li>
+                        <li><i class="fas fa-check"></i> #YegoSiempreCumple</li>
+                    </ul>
+                </div>
+                <div class="nosotros-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para comenzar?</h2>
+                <p>Únete a nuestra comunidad y descubre todas las oportunidades que tenemos para ti.</p>
+                <button class="btn-primary btn-large">Registrarse Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YEGO</h3>
+                    <p>La comunidad de conductores Yango más grande de Latinoamérica! Con soporte 24/7 y beneficios exclusivos. #YegoSiempreCumple ❤️</p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@yegoenvivo" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/yegoperuoficial/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/16692315122" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Conductores Yango</a></li>
+                        <li><a href="#">Beneficios Exclusivos</a></li>
+                        <li><a href="#">Soporte 24/7</a></li>
+                        <li><a href="#">Quiero Brandear</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contáctanos</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Prolongación Iquitos 2299, Lince</p>
+                        <p><i class="fas fa-phone"></i> +1(669)231-5122</p>
+                        <p><i class="fas fa-envelope"></i> sac@yego.pro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Yego 2024. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Icons -->
+    <a href="https://wa.me/16692315122" class="whatsapp-icon" target="_blank" title="Comunícate al WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://meet.google.com/jbq-fyyi-fbk" class="meet-icon" target="_blank" title="Full capacitación">
+        <i class="fab fa-google"></i>
+    </a>
+    <a href="https://www.tiktok.com/@yegoenvivo" class="tiktok-icon" target="_blank" title="Todos los días de 6 a.m a 10 p.m">
+        <i class="fab fa-tiktok"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
