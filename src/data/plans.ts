@@ -1,4 +1,4 @@
-import { PlanFinanciamiento, Modalidad } from '../types';
+import { PlanFinanciamiento, Modalidad, DescuentoViajes } from '../types';
 
 // Modalidades para YEGO MI AUTO
 const modalidadesYegoMiAuto: Modalidad[] = [
@@ -108,5 +108,16 @@ export const planesFinanciamiento: PlanFinanciamiento[] = [
     ctaLink: 'https://api.whatsapp.com/send?phone=51905459444&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20PRO',
     color: 'green',
   },
+];
+
+// Descuentos por viajes
+export const descuentosViajes: DescuentoViajes[] = [
+  { viajes: 20, descuento: '5%', ahorro: '$200', pago: '$3800' },
+  { viajes: 25, descuento: '7%', ahorro: '$280', pago: '$3720' },
+  { viajes: 30, descuento: '10%', ahorro: '$400', pago: '$3600' },
+  { viajes: 35, descuento: '12%', ahorro: '$480', pago: '$3520' },
+  { viajes: 40, descuento: '15%', ahorro: '$600', pago: '$3400' },
+  { viajes: 45, descuento: '18%', ahorro: '$720', pago: '$3280' },
+  { viajes: 50, descuento: '20%', ahorro: '$800', pago: '$3200' },
 ];
 
