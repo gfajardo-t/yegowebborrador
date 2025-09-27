@@ -1,0 +1,263 @@
+import { ServicioDestacado, Servicio, PlanFinanciamiento, NivelPremium, Beneficio, CalificacionViajes, DescuentoViajes } from '../types';
+
+// Servicios destacados
+export const serviciosDestacados: ServicioDestacado[] = [
+  {
+    id: '1',
+    title: 'YEGO MI AUTO',
+    description: 'Tu auto propio con descuentos según tu rendimiento',
+    icon: 'Car',
+    highlights: ['TEA desde 2.65%', 'Desde 0% inicial'],
+    link: '#planes-financiamiento',
+    color: 'red',
+    category: 'yego-mi-auto',
+  },
+  {
+    id: '2',
+    title: 'YEGO PRO',
+    description: 'Plan de compartir ganancias - Nosotros ponemos el auto',
+    icon: 'Handshake',
+    highlights: ['Ingresos garantizados', 'S/800.00 semanales'],
+    link: '#planes-financiamiento',
+    color: 'green',
+    category: 'yego-pro',
+  },
+  {
+    id: '3',
+    title: 'YEGO PREMIUM',
+    description: 'Programa gratuito con beneficios exclusivos',
+    icon: 'Crown',
+    highlights: ['COMPLETAMENTE GRATIS', 'Beneficios exclusivos'],
+    link: '#yego-premium',
+    color: 'purple',
+    category: 'yego-premium',
+  },
+  {
+    id: '4',
+    title: 'PROMOCIONES',
+    description: 'Ofertas especiales y descuentos exclusivos',
+    icon: 'Gift',
+    highlights: ['Ofertas limitadas', 'Descuentos especiales'],
+    link: '#promociones',
+    color: 'orange',
+    category: 'promociones',
+  },
+  {
+    id: '5',
+    title: 'NOVEDADES',
+    description: 'Últimas noticias y actualizaciones',
+    icon: 'Newspaper',
+    highlights: ['Noticias frescas', 'Actualizaciones'],
+    link: '#novedades',
+    color: 'blue',
+    category: 'novedades',
+  },
+  {
+    id: '6',
+    title: 'CONDUCTORES YANGO',
+    description: 'Únete a la comunidad más grande de Latinoamérica',
+    icon: 'Users',
+    highlights: ['Comunidad grande', 'Soporte 24/7'],
+    link: '#servicios',
+    color: 'pink',
+    category: 'conductores-yango',
+  },
+];
+
+// Servicios regulares
+export const servicios: Servicio[] = [
+  {
+    id: '1',
+    title: 'Conductores Yango',
+    description: 'Únete a la comunidad más grande de conductores Yango en Latinoamérica con soporte 24/7.',
+    icon: 'Car',
+    highlights: ['Comunidad grande', 'Soporte 24/7'],
+    link: '#registro',
+    color: 'red',
+  },
+  {
+    id: '2',
+    title: 'Beneficios Exclusivos',
+    description: 'Disfruta de recompensas, descuentos y beneficios exclusivos para conductores Yego.',
+    icon: 'Gift',
+    highlights: ['Recompensas', 'Descuentos'],
+    link: '#beneficios',
+    color: 'orange',
+  },
+  {
+    id: '3',
+    title: 'Soporte 24/7',
+    description: 'Asistencia técnica y soporte completo las 24 horas del día, los 7 días de la semana.',
+    icon: 'Headphones',
+    highlights: ['24/7', 'Asistencia técnica'],
+    link: '#contacto',
+    color: 'blue',
+  },
+];
+
+// Tabla de calificación de viajes
+export const calificacionViajes: CalificacionViajes[] = [
+  { mes: 'Mes 1', viajesPlata: 50, viajesOro: 400, mesCobertura: 'Mes 2' },
+  { mes: 'Mes 2', viajesPlata: 100, viajesOro: 400, mesCobertura: 'Mes 3' },
+  { mes: 'Mes 3', viajesPlata: 200, viajesOro: 400, mesCobertura: 'Mes 4' },
+  { mes: 'Mes 4*', viajesPlata: 200, viajesOro: 400, mesCobertura: 'Mes 5' },
+  { mes: 'Mes 5 en adelante', viajesPlata: 200, viajesOro: 400, mesCobertura: 'Mes 6' },
+];
+
+// Descuentos por viajes semanales
+export const descuentosViajes: DescuentoViajes[] = [
+  { viajes: 160, bonoAuto: 40, pagariasCuota: 90, ahorroTotal: 6400, pagoTotal: 14400 },
+  { viajes: 140, bonoAuto: 35, pagariasCuota: 95, ahorroTotal: 5600, pagoTotal: 15200 },
+  { viajes: 120, bonoAuto: 30, pagariasCuota: 100, ahorroTotal: 4800, pagoTotal: 16000 },
+  { viajes: 100, bonoAuto: 25, pagariasCuota: 105, ahorroTotal: 4000, pagoTotal: 16800 },
+  { viajes: 80, bonoAuto: 20, pagariasCuota: 110, ahorroTotal: 3200, pagoTotal: 17600 },
+  { viajes: 60, bonoAuto: 15, pagariasCuota: 115, ahorroTotal: 2400, pagoTotal: 18400 },
+  { viajes: 45, bonoAuto: 10, pagariasCuota: 120, ahorroTotal: 1600, pagoTotal: 19200 },
+  { viajes: 30, bonoAuto: 5, pagariasCuota: 125, ahorroTotal: 800, pagoTotal: 20000 },
+  { viajes: 29, bonoAuto: 0, pagariasCuota: 130, ahorroTotal: 0, pagoTotal: 20800 },
+];
+
+// Beneficios detallados
+export const beneficiosDetallados: Beneficio[] = [
+  {
+    id: '1',
+    title: 'Beneficio en combustible',
+    categoria: 'Beneficios exclusivos',
+    nivel: 'plata',
+    ciudades: ['Lima'],
+    coberturasAno: null,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '2',
+    title: 'Apoyo ante choques en ruta',
+    categoria: 'Asistencia en ruta',
+    nivel: 'oro',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '3',
+    title: 'Apoyo económico en caso de hospitalización',
+    categoria: 'Asistencia en ruta',
+    nivel: 'plata',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '4',
+    title: 'Apoyo en caso de Multas ATU',
+    categoria: 'Asistencia en ruta',
+    nivel: 'plata',
+    ciudades: ['Lima'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '5',
+    title: 'Celebración de cumpleaños',
+    categoria: 'Beneficios exclusivos',
+    nivel: 'plata',
+    ciudades: ['Lima'],
+    coberturasAno: 1,
+    accion: 'Automático',
+  },
+  {
+    id: '6',
+    title: 'Escudo de bonos',
+    categoria: 'Apoyo Personal',
+    nivel: 'oro',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '7',
+    title: 'Grúa con copago en caso de emergencia',
+    categoria: 'Apoyo Personal',
+    nivel: 'plata',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '8',
+    title: 'Participación en eventos especiales',
+    categoria: 'Apoyo Personal',
+    nivel: 'plata',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Automático',
+  },
+  {
+    id: '9',
+    title: 'Participación en sorteos exclusivos',
+    categoria: 'Apoyo vehicular',
+    nivel: 'plata',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Automático',
+  },
+  {
+    id: '10',
+    title: 'Préstamos urgentes',
+    categoria: 'Apoyo Personal',
+    nivel: 'oro',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: null,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '11',
+    title: 'Reposición de celular en caso de robo',
+    categoria: 'Apoyo vehicular',
+    nivel: 'oro',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+  {
+    id: '12',
+    title: 'Servicio de lavado de salón para tu vehículo',
+    categoria: 'Beneficios exclusivos',
+    nivel: 'plata',
+    ciudades: ['Arequipa', 'Lima', 'Trujillo'],
+    coberturasAno: 3,
+    accion: 'Aplicar',
+    link: 'http://yegopremiumperu.bitrix24.site',
+  },
+];
+
+// Niveles del programa Yego Premium
+export const nivelesPremium: NivelPremium[] = [
+  {
+    id: 'oro',
+    title: '🥇 Nivel Oro – Beneficios por más de 400 viajes mensuales',
+    description: 'Si superas los 400 viajes mensuales, activas el Nivel Oro automáticamente de Yego Premium. Este es nuestro nivel más alto, reservado para los conductores más activos.',
+    beneficios: beneficiosDetallados.filter(b => b.nivel === 'oro'),
+    requisitos: {
+      viajesMinimos: 400,
+    },
+  },
+  {
+    id: 'plata',
+    title: '🥈 Nivel Plata – Beneficios por hasta 200 viajes mensuales',
+    description: 'Si realizas hasta 200 viajes mensuales, accedes automáticamente al Nivel Plata de Yego Premium. Con este nivel, disfrutarás de beneficios pensados para premiar tu constancia y conexión con la comunidad Yego.',
+    beneficios: beneficiosDetallados.filter(b => b.nivel === 'plata'),
+    requisitos: {
+      viajesMinimos: 50,
+      viajesMaximos: 200,
+    },
+  },
+];
+
