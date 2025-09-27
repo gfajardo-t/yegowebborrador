@@ -112,12 +112,12 @@ export const planesFinanciamiento: PlanFinanciamiento[] = [
 
 // Descuentos por viajes
 export const descuentosViajes: DescuentoViajes[] = [
-  { viajes: 20, descuento: '5%', ahorro: '$200', pago: '$3800' },
-  { viajes: 25, descuento: '7%', ahorro: '$280', pago: '$3720' },
-  { viajes: 30, descuento: '10%', ahorro: '$400', pago: '$3600' },
-  { viajes: 35, descuento: '12%', ahorro: '$480', pago: '$3520' },
-  { viajes: 40, descuento: '15%', ahorro: '$600', pago: '$3400' },
-  { viajes: 45, descuento: '18%', ahorro: '$720', pago: '$3280' },
-  { viajes: 50, descuento: '20%', ahorro: '$800', pago: '$3200' },
+  { viajes: 20, bonoAuto: 200, pagariasCuota: 3800, ahorroTotal: 200, pagoTotal: 3800 },
+  { viajes: 25, bonoAuto: 280, pagariasCuota: 3720, ahorroTotal: 280, pagoTotal: 3720 },
+  { viajes: 30, bonoAuto: 400, pagariasCuota: 3600, ahorroTotal: 400, pagoTotal: 3600 },
+  { viajes: 35, bonoAuto: 480, pagariasCuota: 3520, ahorroTotal: 480, pagoTotal: 3520 },
+  { viajes: 40, bonoAuto: 600, pagariasCuota: 3400, ahorroTotal: 600, pagoTotal: 3400 },
+  { viajes: 45, bonoAuto: 720, pagariasCuota: 3280, ahorroTotal: 720, pagoTotal: 3280 },
+  { viajes: 50, bonoAuto: 800, pagariasCuota: 3200, ahorroTotal: 800, pagoTotal: 3200 },
 ];
 
