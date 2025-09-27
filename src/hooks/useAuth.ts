@@ -4,7 +4,7 @@ import { User } from '../types';
 export const useAuth = () => {
   const { auth, login, logout, setLoading, updateUser } = useAppStore();
 
-  const signIn = async (email: string, password: string): Promise<boolean> => {
+  const signIn = async (email: string, _password: string): Promise<boolean> => {
     setLoading(true);
     
     try {

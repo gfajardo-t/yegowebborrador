@@ -1,15 +1,15 @@
 import React from 'react';
-import { Car, Handshake, Crown, Gift, Newspaper, Users } from 'lucide-react';
+import { Car, Users, Crown, Gift, Newspaper, Users as UsersIcon } from 'lucide-react';
 import { serviciosDestacados } from '../data/services';
 import { cn } from '../utils/cn';
 
 const iconMap = {
   Car,
-  Handshake,
+  Users,
   Crown,
   Gift,
   Newspaper,
-  Users,
+  UsersIcon,
 };
 
 const colorClasses = {

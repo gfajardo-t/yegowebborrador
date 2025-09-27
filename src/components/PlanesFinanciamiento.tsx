@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Car, Handshake, Percent, DollarSign, Clock, IdCard, Calendar, Gift, Gavel, Zap } from 'lucide-react';
+import { Car, Users, Percent, DollarSign, Clock, CreditCard, Calendar, Gift, Gavel, Zap } from 'lucide-react';
 import { planesFinanciamiento, descuentosViajes } from '../data/plans';
 import { cn } from '../utils/cn';
 
 const iconMap = {
   Car,
-  Handshake,
+  Users,
   Percent,
   DollarSign,
   Clock,
-  IdCard,
+  CreditCard,
   Calendar,
   Gift,
   Gavel,
@@ -166,7 +166,7 @@ const PlanesFinanciamiento: React.FC = () => {
                           </tr>
                         </thead>
                         <tbody>
-                          {descuentosViajes.map((descuento, index) => (
+                          {descuentosViajes.map((descuento: any, index: number) => (
                             <tr key={index} className={cn(
                               "border-b border-gray-200 hover:bg-bg-light transition-colors",
                               index % 2 === 0 ? "bg-white" : "bg-gray-50"

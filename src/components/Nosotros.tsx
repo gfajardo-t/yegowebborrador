@@ -1,6 +1,5 @@
 import React from 'react';
-import { Handshake, Check } from 'lucide-react';
-import { cn } from '../utils/cn';
+import { Users, Check } from 'lucide-react';
 
 const Nosotros: React.FC = () => {
   const features = [
@@ -43,7 +42,7 @@ const Nosotros: React.FC = () => {
             <div className="relative">
               {/* Main Visual */}
               <div className="w-96 h-72 bg-gradient-to-br from-accent to-primary rounded-2xl shadow-custom-lg flex items-center justify-center">
-                <Handshake className="w-24 h-24 text-white" />
+                <Users className="w-24 h-24 text-white" />
               </div>
 
               {/* Floating Elements */}

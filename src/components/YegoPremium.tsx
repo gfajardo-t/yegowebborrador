@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, DollarSign, Car, Smartphone, Calendar, Truck, Gift, CarWash, Hospital, Cake, AlertTriangle } from 'lucide-react';
+import { Shield, DollarSign, Car, Smartphone, Calendar, Truck, Gift, Wrench, Heart, Cake, AlertTriangle } from 'lucide-react';
 import { nivelesPremium, beneficiosDetallados, calificacionViajes } from '../data/services';
 import { cn } from '../utils/cn';
 
@@ -11,8 +11,8 @@ const iconMap = {
   Calendar,
   Truck,
   Gift,
-  CarWash,
-  Hospital,
+  Wrench,
+  Heart,
   Cake,
   AlertTriangle,
 };

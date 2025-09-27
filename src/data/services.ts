@@ -1,4 +1,4 @@
-import { ServicioDestacado, Servicio, PlanFinanciamiento, NivelPremium, Beneficio, CalificacionViajes, DescuentoViajes } from '../types';
+import { ServicioDestacado, Servicio, NivelPremium, Beneficio, CalificacionViajes, DescuentoViajes } from '../types';
 
 // Servicios destacados
 export const serviciosDestacados: ServicioDestacado[] = [

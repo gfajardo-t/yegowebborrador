@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { AppState, User, AuthState } from '../types';
+import { AppState, User } from '../types';
 
 interface AppStore extends AppState {
   // Theme actions
@@ -21,7 +21,7 @@ interface AppStore extends AppState {
 
 export const useAppStore = create<AppStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       // Initial state
       theme: {
         primaryColor: 'red',
