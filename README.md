@@ -207,3 +207,8 @@ Para soporte técnico o preguntas:
 
 **¡Gracias por usar Yego! 🚗💨**
 
+## 🌐 Despliegue en GitHub Pages
+Este proyecto está configurado para desplegarse automáticamente en GitHub Pages.
+- **URL**: https://gfajardo-t.github.io/yegowebborrador
+- **Actualización**: Automática en cada push a main
+
