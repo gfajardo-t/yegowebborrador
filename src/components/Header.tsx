@@ -8,18 +8,30 @@ const Header: React.FC = () => {
   const { isMenuOpen, toggleMenu, scrollToSection, closeMenu } = useNavigation();
   const { primaryColor, changeColor, colorSchemes } = useTheme();
 
+  const scrollToProgram = (programId: string) => {
+    // Primero hacer scroll a la sección de servicios destacados
+    scrollToSection('servicios-destacados');
+    
+    // Luego hacer scroll al programa específico después de un pequeño delay
+    setTimeout(() => {
+      const element = document.getElementById(programId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 500);
+  };
+
   const navItems = [
     { id: 'inicio', label: 'Inicio' },
     { 
       id: 'servicios', 
-      label: 'Servicios',
+      label: 'Nuestros Programas',
       submenu: [
-        { id: 'servicios', label: 'Conductores Yango' },
+        { id: 'servicios-destacados', label: 'Yego Mi Auto' },
+        { id: 'servicios-destacados', label: 'Yego Pro' },
         { id: 'yego-premium', label: 'Yego Premium' },
         { id: 'planes-financiamiento', label: 'Planes de Financiamiento' },
-        { id: 'beneficios', label: 'Beneficios' },
-        { id: 'planes', label: 'Planes' },
-        { id: 'cobertura', label: 'Cobertura de Seguros' },
+        { id: 'servicios', label: 'Conductores Yango' },
       ]
     },
     { id: 'nosotros', label: 'Nosotros' },
@@ -38,9 +50,31 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-bg-white shadow-custom">
       <nav className="container mx-auto px-5">
         <div className="flex justify-between items-center h-[70px]">
-          {/* Logo */}
-          <div className="logo">
-            <h2 className="text-2xl font-bold text-primary">YEGO</h2>
+          {/* Logos Yego y Yango */}
+          <div className="flex items-center space-x-4">
+            <button 
+              onClick={() => scrollToSection('inicio')}
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300"
+            >
+              <img 
+                src="/logos/yego.png" 
+                alt="Logo Yego" 
+                className="w-8 h-8 object-contain"
+              />
+              <span className="text-xl font-bold text-primary">YEGO</span>
+            </button>
+            <div className="text-gray-400">+</div>
+            <button 
+              onClick={() => scrollToSection('servicios')}
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300"
+            >
+              <img 
+                src="/logos/yango-rojo.png" 
+                alt="Logo Yango" 
+                className="w-8 h-8 object-contain"
+              />
+              <span className="text-xl font-bold text-text-dark">YANGO</span>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -56,11 +90,19 @@ const Header: React.FC = () => {
                 </button>
                 
                 {item.submenu && (
-                  <ul className="absolute top-full left-0 mt-2 w-48 bg-bg-white rounded-lg shadow-custom-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                    {item.submenu.map((subItem) => (
-                      <li key={subItem.id}>
+                  <ul className="absolute top-full left-0 mt-2 w-56 bg-bg-white rounded-lg shadow-custom-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    {item.submenu.map((subItem, index) => (
+                      <li key={subItem.id + index}>
                         <button
-                          onClick={() => scrollToSection(subItem.id)}
+                          onClick={() => {
+                            if (subItem.label === 'Yego Mi Auto') {
+                              scrollToProgram('1');
+                            } else if (subItem.label === 'Yego Pro') {
+                              scrollToProgram('2');
+                            } else {
+                              scrollToSection(subItem.id);
+                            }
+                          }}
                           className="block w-full text-left px-4 py-3 text-text-dark hover:bg-bg-light hover:text-primary transition-colors duration-300"
                         >
                           {subItem.label}
