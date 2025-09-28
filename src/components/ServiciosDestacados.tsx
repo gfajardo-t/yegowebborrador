@@ -1,15 +1,15 @@
 import React from 'react';
-import { Car, Users, Crown, Gift, Newspaper, Users as UsersIcon } from 'lucide-react';
 import { serviciosDestacados } from '../data/services';
 import { cn } from '../utils/cn';
 
-const iconMap = {
-  Car,
-  Users,
-  Crown,
-  Gift,
-  Newspaper,
-  UsersIcon,
+// Mapeo de logos por categoría
+const logoMap = {
+  'yego-mi-auto': '/logos/yego-mi-auto.png',
+  'yego-pro': '/logos/yego-pro.png',
+  'yego-premium': '/logos/yego-premium.png',
+  'promociones': '/logos/yego-positivo.png',
+  'novedades': '/logos/yego-negativo.png',
+  'conductores-yango': '/logos/yango-rojo.png',
 };
 
 // Solo usamos colores rojo, blanco, negro, gris
@@ -38,17 +38,23 @@ const ServiciosDestacados: React.FC = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviciosDestacados.map((servicio) => {
-            const IconComponent = iconMap[servicio.icon as keyof typeof iconMap];
+            const logoSrc = logoMap[servicio.category as keyof typeof logoMap];
             
             return (
               <div
                 key={servicio.id}
                 className="group bg-bg-white rounded-3xl p-8 shadow-custom border border-gray-200 transition-all duration-300 hover:shadow-custom-lg relative overflow-hidden"
               >
-                {/* Icon */}
+                {/* Logo */}
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl transition-transform duration-300 group-hover:scale-110">
-                    {IconComponent && <IconComponent />}
+                  <div className="w-20 h-20 bg-bg-white rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 border-2 border-gray-200">
+                    {logoSrc && (
+                      <img 
+                        src={logoSrc} 
+                        alt={`Logo ${servicio.title}`}
+                        className="w-12 h-12 object-contain"
+                      />
+                    )}
                   </div>
                 </div>
 
