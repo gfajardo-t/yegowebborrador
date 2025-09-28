@@ -11,7 +11,7 @@ const iconMap = {
 
 const Servicios: React.FC = () => {
   return (
-    <section id="servicios" className="py-20 bg-white">
+    <section id="servicios" className="py-20 bg-bg-white">
       <div className="container mx-auto px-5">
         {/* Section Header */}
         <div className="section-header">
@@ -58,7 +58,7 @@ const Servicios: React.FC = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="btn-outline w-full group-hover:border-primary group-hover:text-primary transition-all duration-300">
+                <button className="btn-secondary w-full">
                   {servicio.title === 'Conductores Yango' && 'Registrarse'}
                   {servicio.title === 'Beneficios Exclusivos' && 'Ver Beneficios'}
                   {servicio.title === 'Soporte 24/7' && 'Contactar'}

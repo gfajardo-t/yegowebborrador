@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   ] as const;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-custom">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-bg-white shadow-custom">
       <nav className="container mx-auto px-5">
         <div className="flex justify-between items-center h-[70px]">
           {/* Logo */}
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
                 </button>
                 
                 {item.submenu && (
-                  <ul className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-custom-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  <ul className="absolute top-full left-0 mt-2 w-48 bg-bg-white rounded-lg shadow-custom-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                     {item.submenu.map((subItem) => (
                       <li key={subItem.id}>
                         <button
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-custom-lg border-t">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-bg-white shadow-custom-lg border-t">
             <ul className="px-5 py-4 space-y-2">
               {navItems.map((item) => (
                 <li key={item.id}>

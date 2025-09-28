@@ -23,8 +23,9 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        'heading': ['Poppins', 'sans-serif'],
+        'heading': ['Alan Sans', 'sans-serif'],
         'body': ['Inter', 'sans-serif'],
+        'alan': ['Alan Sans', 'sans-serif'],
       },
       boxShadow: {
         'custom': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
