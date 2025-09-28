@@ -61,7 +61,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego.png" 
                   alt="Logo Yego" 
-                  className="w-16 h-16 object-contain"
+                  className="w-24 h-24 object-contain"
                 />
               </button>
               <div className="text-gray-400 text-xl">+</div>
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yango-rojo.png" 
                   alt="Logo Yango" 
-                  className="w-16 h-16 object-contain"
+                  className="w-24 h-24 object-contain"
                 />
               </button>
             </div>
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego-mi-auto.png" 
                   alt="Yego Mi Auto" 
-                  className="w-12 h-12 object-cover rounded-full"
+                  className="w-16 h-16 object-cover rounded-full"
                 />
               </button>
               <button 
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego-pro.png" 
                   alt="Yego Pro" 
-                  className="w-12 h-12 object-cover rounded-full"
+                  className="w-16 h-16 object-cover rounded-full"
                 />
               </button>
               <button 
