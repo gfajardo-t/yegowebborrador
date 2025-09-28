@@ -2,7 +2,7 @@
   font-family: 'YangoHeadlineArabic';
   src: url('/fonts/YangoHeadlineArabic-Black.woff2') format('woff2'),
        url('/fonts/YangoHeadlineArabic-Black.woff') format('woff');
-  font-weight: 900;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -18,6 +18,11 @@
   
   body {
     @apply bg-white text-text-dark text-lg;
+    font-family: 'YangoHeadlineArabic', 'Inter', sans-serif !important;
+  }
+  
+  * {
+    font-family: 'YangoHeadlineArabic', 'Inter', sans-serif !important;
   }
 }
 
