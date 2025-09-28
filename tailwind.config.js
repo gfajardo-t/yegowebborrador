@@ -18,8 +18,9 @@ export default {
         'bg-light': '#f8fafc',
       },
       fontFamily: {
-        sans: ['YangoHeadlineArabic', 'Inter', 'sans-serif'],
-        'yango': ['YangoHeadlineArabic', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        'heading': ['Poppins', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
       },
       boxShadow: {
         'custom': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
