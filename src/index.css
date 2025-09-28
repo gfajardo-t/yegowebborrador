@@ -17,25 +17,25 @@
   }
   
   body {
-    @apply bg-white text-text-dark;
+    @apply bg-white text-text-dark text-lg;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-custom font-semibold transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5;
+    @apply bg-primary text-white px-6 py-3 rounded-custom font-semibold text-lg transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5;
   }
   
   .btn-secondary {
-    @apply bg-transparent text-primary border-2 border-primary px-5 py-2.5 rounded-custom font-semibold transition-all duration-300 hover:bg-primary hover:text-white;
+    @apply bg-transparent text-primary border-2 border-primary px-5 py-2.5 rounded-custom font-semibold text-lg transition-all duration-300 hover:bg-primary hover:text-white;
   }
   
   .btn-outline {
-    @apply bg-transparent text-text-dark border-2 border-text-light px-5 py-2.5 rounded-custom font-semibold transition-all duration-300 hover:border-primary hover:text-primary;
+    @apply bg-transparent text-text-dark border-2 border-text-light px-5 py-2.5 rounded-custom font-semibold text-lg transition-all duration-300 hover:border-primary hover:text-primary;
   }
   
   .btn-large {
-    @apply px-8 py-4 text-lg;
+    @apply px-8 py-4 text-xl;
   }
   
   .container {
@@ -47,11 +47,11 @@
   }
   
   .section-header h2 {
-    @apply text-4xl font-bold mb-4 text-text-dark;
+    @apply text-5xl font-bold mb-4 text-text-dark;
   }
   
   .section-header p {
-    @apply text-xl text-text-light max-w-2xl mx-auto;
+    @apply text-2xl text-text-light max-w-2xl mx-auto;
   }
 }
 
