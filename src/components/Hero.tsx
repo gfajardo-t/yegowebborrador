@@ -3,7 +3,7 @@ import { cn } from '../utils/cn';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="bg-bg-white pt-[120px] pb-20 min-h-screen flex items-center">
+    <section id="inicio" className="bg-bg-white pt-[250px] pb-20 min-h-screen flex items-center">
       <div className="container mx-auto px-5">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Hero Content */}
