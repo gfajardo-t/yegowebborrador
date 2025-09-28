@@ -1,10 +1,19 @@
+@font-face {
+  font-family: 'YangoHeadlineArabic';
+  src: url('/fonts/YangoHeadlineArabic-Black.woff2') format('woff2'),
+       url('/fonts/YangoHeadlineArabic-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'YangoHeadlineArabic', 'Inter', sans-serif;
   }
   
   body {
