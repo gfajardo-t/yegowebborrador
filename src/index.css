@@ -8,35 +8,58 @@
   }
   
   body {
-    @apply bg-white text-text-dark text-lg;
+    @apply bg-bg-white text-text-dark text-lg;
     font-family: 'Inter', sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    color: #000000;
+  }
+  
+  p, span, div {
+    color: #000000;
   }
 }
 
 @layer components {
+  /* Botón rojo con letras blancas (principal) */
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-custom font-semibold text-lg transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5;
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-primary-dark hover:shadow-lg;
   }
   
+  /* Botón blanco con letras negras (secundario) */
   .btn-secondary {
-    @apply bg-transparent text-primary border-2 border-primary px-5 py-2.5 rounded-custom font-semibold text-lg transition-all duration-300 hover:bg-primary hover:text-white;
+    @apply bg-bg-white text-text-dark border-2 border-gray-300 px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-gray-50 hover:border-gray-400;
   }
   
-  .btn-outline {
-    @apply bg-transparent text-text-dark border-2 border-text-light px-5 py-2.5 rounded-custom font-semibold text-lg transition-all duration-300 hover:border-primary hover:text-primary;
+  /* Botón blanco con letras rojas (header) */
+  .btn-header {
+    @apply bg-bg-white text-primary px-6 py-3 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-gray-50;
   }
   
+  /* Botón rojo con letras blancas (grande) */
   .btn-large {
-    @apply px-8 py-4 text-xl;
+    @apply bg-primary text-white px-8 py-4 rounded-lg font-semibold text-xl transition-all duration-300 hover:bg-primary-dark hover:shadow-lg;
+  }
+  
+  /* Botón blanco con letras negras (grande) */
+  .btn-large-white {
+    @apply bg-bg-white text-text-dark border-2 border-gray-300 px-8 py-4 rounded-lg font-semibold text-xl transition-all duration-300 hover:bg-gray-50 hover:border-gray-400;
   }
   
   .container {
     @apply max-w-6xl mx-auto px-5;
+  }
+  
+  /* Header con fondo rojo */
+  .header-red {
+    @apply bg-primary text-white py-4;
+  }
+  
+  .header-white {
+    @apply bg-bg-white text-text-dark py-4 border-b border-gray-200;
   }
   
   .section-header {
@@ -49,6 +72,27 @@
   
   .section-header p {
     @apply text-2xl text-text-light max-w-2xl mx-auto font-body;
+  }
+  
+  /* Sección de beneficios con fondo gris */
+  .benefits-section {
+    @apply bg-bg-gray py-16;
+  }
+  
+  .benefit-card {
+    @apply bg-bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300;
+  }
+  
+  .benefit-icon {
+    @apply text-text-dark mb-4;
+  }
+  
+  .benefit-title {
+    @apply text-text-dark font-heading font-semibold text-xl mb-2;
+  }
+  
+  .benefit-description {
+    @apply text-text-muted font-body text-base;
   }
 }
 
