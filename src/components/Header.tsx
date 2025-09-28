@@ -49,7 +49,7 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-bg-white shadow-custom">
       <nav className="container mx-auto px-5">
-        <div className="flex justify-between items-center h-[210px]">
+        <div className="flex justify-between items-center h-[140px]">
           {/* Logos principales y programas */}
           <div className="flex items-center space-x-6">
             {/* Logos Yego y Yango */}
@@ -61,10 +61,10 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego.png" 
                   alt="Logo Yego" 
-                  className="w-24 h-24 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </button>
-              <div className="text-gray-400 text-2xl">+</div>
+              <div className="text-gray-400 text-xl">+</div>
               <button 
                 onClick={() => scrollToSection('servicios')}
                 className="hover:opacity-80 transition-opacity duration-300"
@@ -72,13 +72,13 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yango-rojo.png" 
                   alt="Logo Yango" 
-                  className="w-24 h-24 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </button>
             </div>
             
             {/* Separador */}
-            <div className="w-px h-24 bg-gray-300"></div>
+            <div className="w-px h-16 bg-gray-300"></div>
             
             {/* Logos de programas */}
             <div className="flex items-center space-x-4">
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego-mi-auto.png" 
                   alt="Yego Mi Auto" 
-                  className="w-18 h-18 object-cover rounded-full"
+                  className="w-12 h-12 object-cover rounded-full"
                 />
               </button>
               <button 
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego-pro.png" 
                   alt="Yego Pro" 
-                  className="w-18 h-18 object-cover rounded-full"
+                  className="w-12 h-12 object-cover rounded-full"
                 />
               </button>
               <button 
@@ -112,7 +112,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logos/yego-positivo.png" 
                   alt="Promociones" 
-                  className="w-18 h-18 object-contain"
+                  className="w-12 h-12 object-contain"
                 />
               </button>
             </div>
