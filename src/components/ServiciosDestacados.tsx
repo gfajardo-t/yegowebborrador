@@ -12,18 +12,11 @@ const iconMap = {
   UsersIcon,
 };
 
-const colorClasses = {
-  red: 'from-red-600 to-orange-500',
-  green: 'from-green-600 to-emerald-500',
-  purple: 'from-purple-600 to-violet-500',
-  orange: 'from-orange-600 to-amber-500',
-  blue: 'from-blue-600 to-cyan-500',
-  pink: 'from-pink-600 to-rose-500',
-};
+// Solo usamos colores rojo, blanco, negro, gris
 
 const ServiciosDestacados: React.FC = () => {
   return (
-    <section id="servicios-destacados" className="py-20 bg-gradient-to-br from-slate-800 to-slate-700 relative overflow-hidden">
+    <section id="servicios-destacados" className="py-20 bg-bg-gray relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -34,10 +27,10 @@ const ServiciosDestacados: React.FC = () => {
       <div className="container mx-auto px-5 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-5 drop-shadow-lg">
+          <h2 className="text-4xl lg:text-5xl font-bold text-text-dark mb-5">
             Nuestros Servicios Destacados
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-text-light max-w-3xl mx-auto">
             Descubre las mejores opciones para conductores profesionales
           </p>
         </div>
@@ -50,35 +43,22 @@ const ServiciosDestacados: React.FC = () => {
             return (
               <div
                 key={servicio.id}
-                className="group bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20 transition-all duration-500 hover:scale-105 hover:shadow-3xl relative overflow-hidden"
+                className="group bg-bg-white rounded-3xl p-8 shadow-custom border border-gray-200 transition-all duration-300 hover:shadow-custom-lg relative overflow-hidden"
               >
-                {/* Top Border Animation */}
-                <div className={cn(
-                  "absolute top-0 left-0 right-0 h-1 bg-gradient-to-r transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300",
-                  colorClasses[servicio.color]
-                )}></div>
-
                 {/* Icon */}
                 <div className="relative mb-6">
-                  <div className={cn(
-                    "w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl relative overflow-hidden transition-transform duration-300 group-hover:scale-110",
-                    `bg-gradient-to-br ${colorClasses[servicio.color]}`
-                  )}>
-                    {IconComponent && <IconComponent className="relative z-10" />}
-                    <div className={cn(
-                      "absolute inset-0 bg-gradient-to-br transition-transform duration-300 group-hover:scale-110",
-                      colorClasses[servicio.color]
-                    )}></div>
+                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl transition-transform duration-300 group-hover:scale-110">
+                    {IconComponent && <IconComponent />}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-slate-800 uppercase tracking-wide">
+                  <h3 className="text-xl font-bold text-text-dark uppercase tracking-wide">
                     {servicio.title}
                   </h3>
                   
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-text-light leading-relaxed">
                     {servicio.description}
                   </p>
 
@@ -87,10 +67,7 @@ const ServiciosDestacados: React.FC = () => {
                     {servicio.highlights.map((highlight, index) => (
                       <span
                         key={index}
-                        className={cn(
-                          "px-3 py-1 rounded-full text-xs font-semibold text-white uppercase tracking-wide",
-                          `bg-gradient-to-r ${colorClasses[servicio.color]}`
-                        )}
+                        className="px-3 py-1 rounded-full text-xs font-semibold text-white bg-primary uppercase tracking-wide"
                       >
                         {highlight}
                       </span>
@@ -98,16 +75,9 @@ const ServiciosDestacados: React.FC = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <a
-                    href={servicio.link}
-                    className={cn(
-                      "inline-flex items-center px-6 py-3 rounded-full text-white font-semibold text-sm uppercase tracking-wide transition-all duration-300 relative overflow-hidden group/btn",
-                      `bg-gradient-to-r ${colorClasses[servicio.color]} hover:shadow-lg hover:-translate-y-0.5`
-                    )}
-                  >
-                    <span className="relative z-10">Ver Detalles</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-500"></div>
-                  </a>
+                  <button className="btn-primary w-full">
+                    Ver Detalles
+                  </button>
                 </div>
               </div>
             );

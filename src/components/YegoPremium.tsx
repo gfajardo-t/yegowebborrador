@@ -29,7 +29,7 @@ const YegoPremium: React.FC = () => {
           <p>Un programa exclusivo que te apoya mientras trabajas y te da más tranquilidad en cada viaje</p>
           
           {/* Premium Highlight */}
-          <div className="bg-gradient-to-r from-yellow-100 to-amber-100 border-2 border-accent rounded-xl p-8 mt-8 text-center">
+          <div className="bg-bg-gray border-2 border-primary rounded-xl p-8 mt-8 text-center">
             <span className="inline-block bg-primary text-white px-6 py-3 rounded-full font-bold text-lg mb-4">
               💯 COMPLETAMENTE GRATIS
             </span>
@@ -132,8 +132,8 @@ const YegoPremium: React.FC = () => {
                   className={cn(
                     "rounded-2xl p-8 border-2 transition-all duration-300 hover:shadow-custom-lg",
                     nivel.id === 'oro'
-                      ? "bg-gradient-to-br from-yellow-50 to-amber-50 border-yellow-300"
-                      : "bg-gradient-to-br from-gray-50 to-slate-50 border-gray-300"
+                      ? "bg-bg-white border-primary"
+                      : "bg-bg-gray border-gray-300"
                   )}
                 >
                   <div className="mb-6">
@@ -235,7 +235,7 @@ const YegoPremium: React.FC = () => {
               <p className="text-text-light">Opción de Asistencia en la App Yango Pro</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">W</span>
               </div>
               <h4 className="text-lg font-semibold text-text-dark mb-2">WhatsApp</h4>
@@ -251,7 +251,7 @@ const YegoPremium: React.FC = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">F</span>
               </div>
               <h4 className="text-lg font-semibold text-text-dark mb-2">Formulario</h4>

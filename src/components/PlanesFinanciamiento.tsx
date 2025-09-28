@@ -30,7 +30,7 @@ const PlanesFinanciamiento: React.FC = () => {
   };
 
   return (
-    <section id="planes-financiamiento" className="py-20 bg-gradient-to-br from-bg-light to-gray-100">
+    <section id="planes-financiamiento" className="py-20 bg-bg-gray">
       <div className="container mx-auto px-5">
         {/* Section Header */}
         <div className="section-header">
@@ -48,16 +48,14 @@ const PlanesFinanciamiento: React.FC = () => {
                 key={plan.id}
                 className={cn(
                   "bg-white rounded-3xl p-10 shadow-custom-lg border-2 transition-all duration-300 hover:shadow-2xl",
-                  plan.color === 'red' ? "border-l-8 border-l-red-600" : "border-l-8 border-l-green-600"
+                  "border-l-8 border-l-primary"
                 )}
               >
                 {/* Plan Header */}
                 <div className="flex items-center mb-8 pb-6 border-b-2 border-gray-100">
                   <div className={cn(
                     "w-20 h-20 rounded-full flex items-center justify-center mr-6 text-white text-3xl",
-                    plan.color === 'red' 
-                      ? "bg-gradient-to-br from-red-600 to-orange-500" 
-                      : "bg-gradient-to-br from-green-600 to-emerald-500"
+                    "bg-primary"
                   )}>
                     {IconComponent && <IconComponent />}
                   </div>
@@ -91,7 +89,7 @@ const PlanesFinanciamiento: React.FC = () => {
                   <ul className="space-y-3">
                     {plan.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
-                        <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                           <span className="text-white text-xs">✓</span>
                         </div>
                         <span className="text-text-light">{feature}</span>
@@ -210,9 +208,7 @@ const PlanesFinanciamiento: React.FC = () => {
                     rel="noopener noreferrer"
                     className={cn(
                       "inline-flex items-center px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1",
-                      plan.color === 'red'
-                        ? "bg-gradient-to-r from-red-600 to-orange-500 text-white hover:shadow-red-500/25"
-                        : "bg-gradient-to-r from-green-600 to-emerald-500 text-white hover:shadow-green-500/25"
+                      "bg-primary text-white hover:shadow-lg"
                     )}
                   >
                     <span className="mr-2">📱</span>
