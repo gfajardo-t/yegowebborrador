@@ -73,27 +73,8 @@ const Header: React.FC = () => {
             ))}
           </ul>
 
-          {/* Theme Customization & Buttons */}
+          {/* Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            {/* Color Picker */}
-            <div className="flex items-center space-x-2">
-              {colorOptions.map((option) => (
-                <button
-                  key={option.key}
-                  onClick={() => changeColor(option.key)}
-                  className={cn(
-                    "w-8 h-8 rounded-full border-2 transition-all duration-300 hover:scale-110",
-                    primaryColor === option.key 
-                      ? "border-white shadow-lg ring-2 ring-text-dark" 
-                      : "border-transparent"
-                  )}
-                  style={{ backgroundColor: option.color }}
-                  title={`Cambiar a color ${option.key}`}
-                />
-              ))}
-            </div>
-
-            {/* Action Buttons */}
             <button className="btn-secondary">Quiero Brandear</button>
             <button className="btn-primary">Registrarse</button>
           </div>
@@ -137,24 +118,8 @@ const Header: React.FC = () => {
               ))}
             </ul>
             
-            {/* Mobile Theme Options */}
+            {/* Mobile Action Buttons */}
             <div className="px-5 py-4 border-t">
-              <div className="flex items-center justify-center space-x-2 mb-4">
-                {colorOptions.map((option) => (
-                  <button
-                    key={option.key}
-                    onClick={() => changeColor(option.key)}
-                    className={cn(
-                      "w-8 h-8 rounded-full border-2 transition-all duration-300",
-                      primaryColor === option.key 
-                        ? "border-white shadow-lg ring-2 ring-text-dark" 
-                        : "border-transparent"
-                    )}
-                    style={{ backgroundColor: option.color }}
-                  />
-                ))}
-              </div>
-              
               <div className="flex flex-col space-y-2">
                 <button className="btn-secondary w-full">Quiero Brandear</button>
                 <button className="btn-primary w-full">Registrarse</button>

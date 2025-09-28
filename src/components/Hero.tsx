@@ -3,7 +3,7 @@ import { cn } from '../utils/cn';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="bg-gradient-to-br from-bg-light to-white pt-[120px] pb-20 min-h-screen flex items-center">
+    <section id="inicio" className="bg-bg-white pt-[120px] pb-20 min-h-screen flex items-center">
       <div className="container mx-auto px-5">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Hero Content */}
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           <div className="flex justify-center items-center">
             <div className="relative">
               {/* Logo Container */}
-              <div className="w-80 h-80 bg-gradient-to-br from-bg-light to-white rounded-3xl shadow-custom-lg border-2 border-gray-200 flex items-center justify-center">
+              <div className="w-80 h-80 bg-bg-white rounded-3xl shadow-custom-lg border-2 border-gray-200 flex items-center justify-center">
                 <img 
                   src="/logo-yego-wsp.png" 
                   alt="Logo Yego" 
@@ -40,9 +40,9 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full animate-float opacity-80"></div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full animate-float opacity-60" style={{ animationDelay: '2s' }}></div>
-              <div className="absolute top-1/2 -right-8 w-8 h-8 bg-gradient-to-br from-primary-dark to-accent rounded-full animate-float opacity-70" style={{ animationDelay: '4s' }}></div>
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary rounded-full animate-float opacity-80"></div>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-primary-dark rounded-full animate-float opacity-60" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute top-1/2 -right-8 w-8 h-8 bg-primary rounded-full animate-float opacity-70" style={{ animationDelay: '4s' }}></div>
             </div>
           </div>
         </div>

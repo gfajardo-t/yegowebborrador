@@ -30,7 +30,7 @@ const Servicios: React.FC = () => {
                 className="group bg-white p-8 rounded-2xl shadow-custom border border-gray-200 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-custom-lg"
               >
                 {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   {IconComponent && (
                     <IconComponent className="w-10 h-10 text-white" />
                   )}
