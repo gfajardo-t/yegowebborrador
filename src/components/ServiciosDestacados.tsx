@@ -47,12 +47,12 @@ const ServiciosDestacados: React.FC = () => {
               >
                 {/* Logo */}
                 <div className="relative mb-6">
-                  <div className="w-24 h-24 bg-bg-white rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 border-2 border-gray-200 overflow-hidden">
+                  <div className="w-20 h-20 bg-bg-white rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 border-2 border-gray-200 overflow-hidden">
                     {logoSrc && (
                       <img 
                         src={logoSrc} 
                         alt={`Logo ${servicio.title}`}
-                        className="w-20 h-20 object-cover rounded-full"
+                        className="w-16 h-16 object-cover rounded-full"
                       />
                     )}
                   </div>
