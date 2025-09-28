@@ -50,31 +50,72 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-bg-white shadow-custom">
       <nav className="container mx-auto px-5">
         <div className="flex justify-between items-center h-[70px]">
-          {/* Logos Yego y Yango */}
-          <div className="flex items-center space-x-4">
-            <button 
-              onClick={() => scrollToSection('inicio')}
-              className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300"
-            >
-              <img 
-                src="/logos/yego.png" 
-                alt="Logo Yego" 
-                className="w-8 h-8 object-contain"
-              />
-              <span className="text-xl font-bold text-primary">YEGO</span>
-            </button>
-            <div className="text-gray-400">+</div>
-            <button 
-              onClick={() => scrollToSection('servicios')}
-              className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300"
-            >
-              <img 
-                src="/logos/yango-rojo.png" 
-                alt="Logo Yango" 
-                className="w-8 h-8 object-contain"
-              />
-              <span className="text-xl font-bold text-text-dark">YANGO</span>
-            </button>
+          {/* Logos principales y programas */}
+          <div className="flex items-center space-x-6">
+            {/* Logos Yego y Yango */}
+            <div className="flex items-center space-x-4">
+              <button 
+                onClick={() => scrollToSection('inicio')}
+                className="hover:opacity-80 transition-opacity duration-300"
+              >
+                <img 
+                  src="/logos/yego.png" 
+                  alt="Logo Yego" 
+                  className="w-8 h-8 object-contain"
+                />
+              </button>
+              <div className="text-gray-400">+</div>
+              <button 
+                onClick={() => scrollToSection('servicios')}
+                className="hover:opacity-80 transition-opacity duration-300"
+              >
+                <img 
+                  src="/logos/yango-rojo.png" 
+                  alt="Logo Yango" 
+                  className="w-8 h-8 object-contain"
+                />
+              </button>
+            </div>
+            
+            {/* Separador */}
+            <div className="w-px h-8 bg-gray-300"></div>
+            
+            {/* Logos de programas */}
+            <div className="flex items-center space-x-3">
+              <button 
+                onClick={() => scrollToProgram('1')}
+                className="hover:opacity-80 transition-opacity duration-300"
+                title="Yego Mi Auto"
+              >
+                <img 
+                  src="/logos/yego-mi-auto.png" 
+                  alt="Yego Mi Auto" 
+                  className="w-6 h-6 object-contain"
+                />
+              </button>
+              <button 
+                onClick={() => scrollToProgram('2')}
+                className="hover:opacity-80 transition-opacity duration-300"
+                title="Yego Pro"
+              >
+                <img 
+                  src="/logos/yego-pro.png" 
+                  alt="Yego Pro" 
+                  className="w-6 h-6 object-contain"
+                />
+              </button>
+              <button 
+                onClick={() => scrollToSection('servicios-destacados')}
+                className="hover:opacity-80 transition-opacity duration-300"
+                title="Promociones"
+              >
+                <img 
+                  src="/logos/yego-positivo.png" 
+                  alt="Promociones" 
+                  className="w-6 h-6 object-contain"
+                />
+              </button>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
