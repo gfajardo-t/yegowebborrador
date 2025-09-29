@@ -49,12 +49,20 @@ const ServiciosDestacados: React.FC = () => {
                 {/* Logo */}
                 <div className="relative mb-6">
                   <div className="w-20 h-20 bg-bg-white rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 border-2 border-gray-200 overflow-hidden">
-                    {logoSrc && (
+                    {logoSrc ? (
                       <img 
                         src={logoSrc} 
                         alt={`Logo ${servicio.title}`}
                         className="w-16 h-16 object-cover rounded-full"
+                        onError={(e) => {
+                          console.error('Error loading logo:', logoSrc);
+                          e.currentTarget.style.display = 'none';
+                        }}
                       />
+                    ) : (
+                      <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">{servicio.title.charAt(0)}</span>
+                      </div>
                     )}
                   </div>
                 </div>
