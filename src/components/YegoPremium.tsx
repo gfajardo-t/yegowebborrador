@@ -241,7 +241,7 @@ const YegoPremium: React.FC = () => {
               <h4 className="text-lg font-semibold text-text-dark mb-2">WhatsApp</h4>
               <p className="text-text-light">
                 <a
-                  href="https://api.whatsapp.com/send?phone=51905459444&text=Hola%20soy%20de%20Per%C3%BA%20y%20necesito%20apoyo"
+                  href="https://api.whatsapp.com/send?phone=51905459777&text=Hola%20soy%20de%20Per%C3%BA%20y%20necesito%20apoyo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary-dark font-semibold transition-colors"

@@ -65,7 +65,7 @@ export const planesFinanciamiento: PlanFinanciamiento[] = [
       { icon: 'Calendar', text: 'Fecha máxima: 31/03/2025' },
     ],
     ctaText: 'Solicitar Información',
-    ctaLink: 'https://api.whatsapp.com/send?phone=51905459444&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20MI%20AUTO',
+    ctaLink: 'https://api.whatsapp.com/send?phone=51905459777&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20MI%20AUTO',
     color: 'red',
   },
   {
@@ -105,7 +105,7 @@ export const planesFinanciamiento: PlanFinanciamiento[] = [
       { icon: 'Clock', text: 'Disponibilidad completa' },
     ],
     ctaText: 'Solicitar Información',
-    ctaLink: 'https://api.whatsapp.com/send?phone=51905459444&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20PRO',
+    ctaLink: 'https://api.whatsapp.com/send?phone=51905459777&text=Hola%20quiero%20informaci%C3%B3n%20sobre%20YEGO%20PRO',
     color: 'green',
   },
 ];
