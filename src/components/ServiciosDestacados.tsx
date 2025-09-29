@@ -39,6 +39,7 @@ const ServiciosDestacados: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviciosDestacados.map((servicio) => {
             const logoSrc = logoMap[servicio.category as keyof typeof logoMap];
+            console.log('Servicio:', servicio.title, 'Category:', servicio.category, 'LogoSrc:', logoSrc);
             
             return (
               <div
