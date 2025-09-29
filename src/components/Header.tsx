@@ -81,7 +81,7 @@ const Header: React.FC = () => {
             <div className="w-px h-16 bg-gray-300"></div>
             
             {/* Logos de programas */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-3">
               <button 
                 onClick={() => scrollToProgram('1')}
                 className="hover:opacity-80 transition-opacity duration-300"
@@ -105,14 +105,25 @@ const Header: React.FC = () => {
                 />
               </button>
               <button 
+                onClick={() => scrollToSection('yego-premium')}
+                className="hover:opacity-80 transition-opacity duration-300"
+                title="Yego Premium"
+              >
+                <img 
+                  src="/logos/yego-premium.png" 
+                  alt="Yego Premium" 
+                  className="w-16 h-16 object-cover rounded-full"
+                />
+              </button>
+              <button 
                 onClick={() => scrollToSection('servicios-destacados')}
                 className="hover:opacity-80 transition-opacity duration-300"
                 title="Promociones"
               >
                 <img 
-                  src="/logos/yego-positivo.png" 
+                  src="/logos/promo.png" 
                   alt="Promociones" 
-                  className="w-12 h-12 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </button>
             </div>
