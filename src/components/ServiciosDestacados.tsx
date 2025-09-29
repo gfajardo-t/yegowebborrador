@@ -7,7 +7,7 @@ const logoMap = {
   'yego-mi-auto': '/logos/yego-mi-auto.png',
   'yego-pro': '/logos/yego-pro.png',
   'yego-premium': '/logos/yego-premium.png',
-  'promociones': '/logos/yego-positivo.png',
+  'promociones': '/logos/promo.png',
   'novedades': '/logos/yego-negativo.png',
   'conductores-yango': '/logos/yango-rojo.png',
 };

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Car, Gift, Headphones } from 'lucide-react';
 import { servicios } from '../data/services';
 import { cn } from '../utils/cn';
 
-const iconMap = {
-  Car,
-  Gift,
-  Headphones,
+// Mapeo de logos por servicio
+const logoMap = {
+  'Car': '/logos/yango-rojo.png',
+  'Gift': '/logos/yego-positivo.png',
+  'Headphones': '/logos/whatsapp-logo.png',
 };
 
 const Servicios: React.FC = () => {
@@ -22,17 +22,21 @@ const Servicios: React.FC = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicios.map((servicio) => {
-            const IconComponent = iconMap[servicio.icon as keyof typeof iconMap];
+            const logoSrc = logoMap[servicio.icon as keyof typeof logoMap];
             
             return (
               <div
                 key={servicio.id}
                 className="group bg-white p-8 rounded-2xl shadow-custom border border-gray-200 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-custom-lg"
               >
-                {/* Icon */}
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {IconComponent && (
-                    <IconComponent className="w-10 h-10 text-white" />
+                {/* Logo */}
+                <div className="w-20 h-20 bg-bg-white rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 border-2 border-gray-200 overflow-hidden">
+                  {logoSrc && (
+                    <img 
+                      src={logoSrc} 
+                      alt={`Logo ${servicio.title}`}
+                      className="w-16 h-16 object-cover rounded-full"
+                    />
                   )}
                 </div>
 

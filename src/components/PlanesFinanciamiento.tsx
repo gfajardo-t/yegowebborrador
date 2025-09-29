@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { Car, Users, Percent, DollarSign, Clock, CreditCard, Calendar, Gift, Gavel, Zap } from 'lucide-react';
 import { planesFinanciamiento, descuentosViajes } from '../data/plans';
 import { cn } from '../utils/cn';
 
-const iconMap = {
-  Car,
-  Users,
-  Percent,
-  DollarSign,
-  Clock,
-  CreditCard,
-  Calendar,
-  Gift,
-  Gavel,
-  Zap,
+// Mapeo de logos por icono
+const logoMap = {
+  'Car': '/logos/yego-mi-auto.png',
+  'Users': '/logos/yego-pro.png',
+  'Percent': '/logos/yego-premium.png',
+  'DollarSign': '/logos/yego-positivo.png',
+  'Clock': '/logos/whatsapp-logo.png',
+  'CreditCard': '/logos/yango-rojo.png',
+  'Calendar': '/logos/promo.png',
+  'Gift': '/logos/yego-negativo.png',
+  'Gavel': '/logos/yego.png',
+  'Zap': '/logos/yego-mi-auto.png',
 };
 
 const PlanesFinanciamiento: React.FC = () => {
@@ -41,7 +41,7 @@ const PlanesFinanciamiento: React.FC = () => {
         {/* Plans */}
         <div className="space-y-12">
           {planesFinanciamiento.map((plan) => {
-            const IconComponent = iconMap[plan.icon as keyof typeof iconMap];
+            const logoSrc = logoMap[plan.icon as keyof typeof logoMap];
             
             return (
               <div
@@ -55,9 +55,15 @@ const PlanesFinanciamiento: React.FC = () => {
                 <div className="flex items-center mb-8 pb-6 border-b-2 border-gray-100">
                   <div className={cn(
                     "w-20 h-20 rounded-full flex items-center justify-center mr-6 text-white text-3xl",
-                    "bg-primary"
+                    "bg-primary overflow-hidden"
                   )}>
-                    {IconComponent && <IconComponent />}
+                    {logoSrc && (
+                      <img 
+                        src={logoSrc} 
+                        alt={`Logo ${plan.title}`}
+                        className="w-16 h-16 object-cover rounded-full"
+                      />
+                    )}
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold text-text-dark mb-2">{plan.title}</h3>
@@ -68,13 +74,19 @@ const PlanesFinanciamiento: React.FC = () => {
                 {/* Highlights */}
                 <div className="flex flex-wrap gap-4 mb-8">
                   {plan.highlights.map((highlight, index) => {
-                    const HighlightIcon = iconMap[highlight.icon as keyof typeof iconMap];
+                    const highlightLogoSrc = logoMap[highlight.icon as keyof typeof logoMap];
                     return (
                       <div
                         key={index}
                         className="flex items-center bg-bg-light px-5 py-3 rounded-full border border-gray-200 flex-1 min-w-[200px]"
                       >
-                        {HighlightIcon && <HighlightIcon className="w-5 h-5 text-primary mr-3" />}
+                        {highlightLogoSrc && (
+                          <img 
+                            src={highlightLogoSrc} 
+                            alt={highlight.text}
+                            className="w-5 h-5 object-contain mr-3"
+                          />
+                        )}
                         <span className="font-semibold text-text-dark">{highlight.text}</span>
                       </div>
                     );
@@ -106,7 +118,7 @@ const PlanesFinanciamiento: React.FC = () => {
                     {/* Modalidad Tabs */}
                     <div className="flex flex-wrap gap-3 mb-6">
                       {plan.modalidades.map((modalidad) => {
-                        const ModalidadIcon = iconMap[modalidad.icon as keyof typeof iconMap];
+                        const modalidadLogoSrc = logoMap[modalidad.icon as keyof typeof logoMap];
                         return (
                           <button
                             key={modalidad.id}
@@ -118,7 +130,13 @@ const PlanesFinanciamiento: React.FC = () => {
                                 : "bg-gray-50 text-text-dark border-transparent hover:bg-gray-100"
                             )}
                           >
-                            {ModalidadIcon && <ModalidadIcon className="w-5 h-5 mr-2" />}
+                            {modalidadLogoSrc && (
+                              <img 
+                                src={modalidadLogoSrc} 
+                                alt={modalidad.title}
+                                className="w-5 h-5 object-contain mr-2"
+                              />
+                            )}
                             <span className="font-semibold">{modalidad.title}</span>
                           </button>
                         );
@@ -189,10 +207,16 @@ const PlanesFinanciamiento: React.FC = () => {
                   </h4>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {plan.requirements.map((requirement, index) => {
-                      const RequirementIcon = iconMap[requirement.icon as keyof typeof iconMap];
+                      const requirementLogoSrc = logoMap[requirement.icon as keyof typeof logoMap];
                       return (
                         <div key={index} className="flex items-center bg-bg-light p-4 rounded-lg border border-gray-200">
-                          {RequirementIcon && <RequirementIcon className="w-5 h-5 text-primary mr-3 flex-shrink-0" />}
+                          {requirementLogoSrc && (
+                            <img 
+                              src={requirementLogoSrc} 
+                              alt={requirement.text}
+                              className="w-5 h-5 object-contain mr-3 flex-shrink-0"
+                            />
+                          )}
                           <span className="font-medium text-text-dark">{requirement.text}</span>
                         </div>
                       );

@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               {/* Logo Container */}
               <div className="w-80 h-80 bg-bg-white rounded-3xl shadow-custom-lg border-2 border-gray-200 flex items-center justify-center">
                 <img 
-                  src="/logo-yego-wsp.png" 
+                  src="/logos/yego.png" 
                   alt="Logo Yego" 
                   className="w-48 h-48 object-contain"
                 />

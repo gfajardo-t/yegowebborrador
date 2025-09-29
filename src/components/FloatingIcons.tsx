@@ -3,8 +3,8 @@ import React from 'react';
 const FloatingIcons: React.FC = () => {
   const floatingButtons = [
     {
-      href: 'https://wa.me/16692315122',
-      icon: '💬',
+      href: 'https://wa.me/51905459777',
+      icon: '/logos/whatsapp-logo.png',
       title: 'Comunícate al WhatsApp',
       position: 'bottom-5 right-5',
       bgColor: 'bg-green-500',
@@ -36,7 +36,15 @@ const FloatingIcons: React.FC = () => {
           className={`fixed ${button.position} w-14 h-14 ${button.bgColor} rounded-full flex items-center justify-center text-white text-xl shadow-lg hover:scale-110 transition-all duration-300 z-50 hover:shadow-xl`}
           title={button.title}
         >
-          <span className="text-2xl">{button.icon}</span>
+          {button.icon.startsWith('/') ? (
+            <img 
+              src={button.icon} 
+              alt={button.title}
+              className="w-6 h-6 object-contain"
+            />
+          ) : (
+            <span className="text-2xl">{button.icon}</span>
+          )}
         </a>
       ))}
     </>

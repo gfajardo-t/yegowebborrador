@@ -42,18 +42,34 @@ const Nosotros: React.FC = () => {
             <div className="relative">
               {/* Main Visual */}
               <div className="w-96 h-72 bg-gradient-to-br from-accent to-primary rounded-2xl shadow-custom-lg flex items-center justify-center">
-                <Users className="w-24 h-24 text-white" />
+                <img 
+                  src="/logos/yego.png" 
+                  alt="Logo Yego" 
+                  className="w-32 h-32 object-contain"
+                />
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-full shadow-custom flex items-center justify-center">
-                <span className="text-2xl">🚗</span>
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-full shadow-custom flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/logos/yango-rojo.png" 
+                  alt="Yango" 
+                  className="w-12 h-12 object-contain"
+                />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-white rounded-full shadow-custom flex items-center justify-center">
-                <span className="text-xl">💪</span>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-white rounded-full shadow-custom flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/logos/yego-mi-auto.png" 
+                  alt="Yego Mi Auto" 
+                  className="w-8 h-8 object-cover rounded-full"
+                />
               </div>
-              <div className="absolute top-1/2 -right-8 w-10 h-10 bg-white rounded-full shadow-custom flex items-center justify-center">
-                <span className="text-lg">⭐</span>
+              <div className="absolute top-1/2 -right-8 w-10 h-10 bg-white rounded-full shadow-custom flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/logos/yego-pro.png" 
+                  alt="Yego Pro" 
+                  className="w-6 h-6 object-cover rounded-full"
+                />
               </div>
             </div>
           </div>

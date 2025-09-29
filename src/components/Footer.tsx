@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   const socialLinks = [
     { name: 'TikTok', href: 'https://www.tiktok.com/@yegoenvivo', icon: '🎵' },
     { name: 'Facebook', href: 'https://www.facebook.com/yegoperuoficial/', icon: '📘' },
-    { name: 'WhatsApp', href: 'https://wa.me/16692315122', icon: '💬' },
+    { name: 'WhatsApp', href: 'https://wa.me/51905459777', icon: '/logos/whatsapp-logo.png' },
   ];
 
   return (
@@ -46,7 +46,15 @@ const Footer: React.FC = () => {
                   className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary-dark transition-colors duration-300 hover:scale-110"
                   title={social.name}
                 >
-                  <span className="text-lg">{social.icon}</span>
+                  {social.icon.startsWith('/') ? (
+                    <img 
+                      src={social.icon} 
+                      alt={social.name}
+                      className="w-6 h-6 object-contain"
+                    />
+                  ) : (
+                    <span className="text-lg">{social.icon}</span>
+                  )}
                 </a>
               ))}
             </div>
@@ -98,7 +106,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                <p className="text-gray-300">+1(669)231-5122</p>
+                <p className="text-gray-300">+51 905 459 777</p>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
